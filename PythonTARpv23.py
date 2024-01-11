@@ -16,9 +16,27 @@
 #print(type(pikkus))
 #print(type(kas_käib_koolis))
 
-from random import *
-kokku=randint(10,100)
-print("Kokku",kokku)
-mitu=int(input("Mitu kommi tahad võtta?"))
-kokku-=mitu
-print("Nüüd Laua peal on",kokku,"kommid")
+#from random import *
+#kokku=randint(10,100)
+#print("Kokku",kokku)
+#mitu=int(input("Mitu kommi tahad võtta?"))
+#kokku-=mitu
+#print("Nüüd Laua peal on",kokku,"kommid")
+
+#from random import *
+##10
+#P=randint(1,5)
+#price=12.90
+#price*=1.1 #price + tips
+#osa=round(price/P,2)
+#print("Each friend paid: ",osa)
+
+from random import * 
+#6
+try:
+    aeg=float(input("Mitu tundi kulus sõiduks? ")) #aeg ei saa olla 0
+    teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
+    kiirus = teepikkus/aeg 
+    print("Sinu kiirus oli " + str(kiirus) + " km/h")
+except :
+    print("Viga andmetüübiga")
